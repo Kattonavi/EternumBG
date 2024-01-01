@@ -1,0 +1,89 @@
+/* Reset de estilos y fuentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 20px; /* Añade espacio en la parte inferior del encabezado */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.icons-container {
+    display: flex;
+}
+
+.icon {
+    font-size: 28px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+/* ... (código previo) */
+
+/* Navbar */
+.navbar {
+    background-color: #2c3e50;
+    border: 3px solid #3498db;
+    border-radius: 10px; /* Añade bordes redondeados al navbar */
+    padding: 10px 20px; /* Ajusta el relleno (top y bottom) y la anchura del navbar */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Centra el navbar en la pantalla */
+    max-width: 500px; /* Ajusta el ancho máximo del navbar según tus preferencias */
+}
+
+/* ... (código previo) */
+
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 10px; /* Ajusta el margen entre los elementos de la barra de navegación */
+}
+
+a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px; /* Ajusta el relleno (top y bottom) y la anchura de los elementos de la barra de navegación */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Contenido principal */
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
