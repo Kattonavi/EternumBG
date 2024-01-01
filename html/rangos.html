@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#3498db" />
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link rel="stylesheet" href="/css/ranks.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>ETERNUMBG - Tienda Minecraft</title>
+  </head>
+  <body>
+    <header class="nav">
+      <div>
+        <a class="logo" href="/index.html">ETERNUMBG</a>
+      </div>
+
+      <div>
+        <img src="/img/eternumserver.png" alt="" class="img-logo" />
+      </div>
+
+      <div class="icons-container">
+        <i class="icon bx bxs-cart"></i>
+        <i class="icon bx bx-user"></i>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/html/rangos.html">Rangos</a></li>
+        <li><a href="/html/llaves.html">Llaves</a></li>
+        <li><a href="/html/kits.html">Kits</a></li>
+        <li><a href="/html/soporte.html">Soporte</a></li>
+        <li><a href="/html/reglas.html">Reglas</a></li>
+      </ul>
+    </nav>
+
+    <p class="title">Rangos</p>
+
+    <section class="ranks-section">
+      <figure class="rank" onclick="openModal('heroe')">
+        <figcaption class="rank-description">10% OFF!</figcaption>
+        <img src="/img/eternumheroe-removebg-preview.png" alt="Rango Héroe" />
+        <figcaption class="rank-name">Héroe</figcaption>
+        <figcaption class="rank-price">14 USD</figcaption>
+        <figcaption class="rank-price-off">12.6 USD</figcaption>
+        <button class="buy-button" onclick="openModal('heroe')">
+          <i class="bx bxs-cart-download"></i> Comprar
+        </button>
+      </figure>
+
+      <figure class="rank" onclick="openModal('leyenda')">
+        <figcaption class="rank-description">10% OFF!</figcaption>
+        <img
+          src="/img/eternumleyenda-removebg-preview.png"
+          alt="Rango Leyenda"
+        />
+        <figcaption class="rank-name">Leyenda</figcaption>
+        <figcaption class="rank-price">20 USD</figcaption>
+        <figcaption class="rank-price-off">18 USD</figcaption>
+        <button class="buy-button" onclick="openModal('leyenda')">
+          <i class="bx bxs-cart-download"></i> Comprar
+        </button>
+      </figure>
+    </section>
+
+    <div class="modal" id="heroeModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('heroe')">&times;</span>
+        <img src="/img/eternumheroe-removebg-preview.png" alt="Rango Héroe" />
+        <figcaption class="rank-name">Héroe</figcaption>
+        <p>
+          Reciba el rango Héroe en el servidor EternumBG Minecraft y EternumBG
+          Discord.
+        </p>
+        <ul>
+          <li>Prefijo Héroe (Color de rango Dorado)</li>
+          <li>Rol de Héroe en el discord del servidor</li>
+          <li>+10 items En Subastas</li>
+          <li>+20 Fragmentos de Alma</li>
+          <li>Establecer hasta 5 Homes</li>
+          <li>Ponerte objetos como sombrero /hat</li>
+          <li>Abrir enderchest en cualquier lugar /ec</li>
+          <li>Abrir mesa de crafteo en cualquier lugar /craft</li>
+          <li>
+            Poder usar cualquier color en el chat (&4,&c, &6, &e, &2, &a, &b,
+            &3, &1, &9, &d, &5, &f, &7, &8, &0)
+          </li>
+          <li>Protección de /isla más grande: 70x70 y 100x100</li>
+          <li>
+            Teletransporte 0 segundos al usar /tpa /home y al entrar en dungeons
+          </li>
+        </ul>
+        <button onclick="closeModal('heroe')">Cerrar</button>
+      </div>
+    </div>
+
+    <div class="modal" id="leyendaModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('leyenda')">&times;</span>
+        <img
+          src="/img/eternumleyenda-removebg-preview.png"
+          alt="Rango Leyenda"
+        />
+        <figcaption class="rank-name">Leyenda</figcaption>
+        <p>
+          Reciba el rango Leyenda en el servidor EternumBG Minecraft y EternumBG
+          Discord.
+        </p>
+        <ul>
+          <!-- Contenido del modal para Leyenda -->
+          <li>Prefijo Leyenda (Color de rango Morado)</li>
+          <li>Rol de leyenda en el discord del servidor</li>
+          <li>+16 items en subastas</li>
+          <li>+40 Fragmentos de Alma</li>
+          <li>Establecer hasta 8 Homes</li>
+          <li>Ponerte objetos como sombrero /hat</li>
+          <li>Abrir enderchest en cualquier lugar /ec</li>
+          <li>Abrir mesa de crafteo en cualquier lugar /craft</li>
+          <li>
+            Poder usar cualquier color en el chat (&4,&c, &6, &e, &2, &a, &b,
+            &3, &1, &9, &d, &5, &f, &7, &8, &0)
+          </li>
+          <li>Protección de /isla más grande: 100x100</li>
+          <li>
+            Teletransporte 0 segundos al usar /tpa /home y al entrar en dungeons
+          </li>
+          <li>Teletransporte aleatorio dentro del mundo nether /rtpnether</li>
+          <li>Bolsa de aventurero (mochila legendaria de slots extras)</li>
+          <li>Poder cambiarte el nombre /nick</li>
+          <li>Fly en los mundos /isla y /spawn</li>
+          <li>Comando /eglow</li>
+        </ul>
+        <button onclick="closeModal('leyenda')">Cerrar</button>
+      </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
